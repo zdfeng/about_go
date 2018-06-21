@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0037)http://127.0.0.1:3999/gopher.slide#11 -->
+<!-- saved from url=(0036)http://127.0.0.1:3999/gopher.slide#1 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Gopher China Introduction</title>
     
@@ -31,9 +31,9 @@
 
   <body style="display: none" class="loaded">
 
-    <section class="slides layout-widescreen" style="transform: scale(0.868);">
+    <section class="slides layout-widescreen" style="transform: scale(0.864);">
 
-      <article>
+      <article class="current">
         <h1>Gopher China Introduction</h1>
         <h3>BlockChain &amp; Microservice</h3>
         <h3>19 July 2018</h3>
@@ -62,7 +62,7 @@
 
   
   
-      <article>
+      <article class="next">
       
         <h3>Introduction</h3>
         
@@ -82,7 +82,7 @@
   
   
   
-      <article>
+      <article class="far-next">
       
         <h3>2018GopherChina 简介</h3>
         
@@ -104,7 +104,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>Why GO</h3>
         
@@ -148,7 +148,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h2>区块链</h2>
       
@@ -157,7 +157,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>什么是区块链</h3>
         
@@ -189,7 +189,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>区块链的特征</h3>
         
@@ -223,7 +223,7 @@
   
   
   
-      <article>
+      <article class="">
       
         <h3>区块链项目的组成架构</h3>
         
@@ -237,7 +237,7 @@
   
   
   
-      <article class="far-past">
+      <article class="">
       
         <h3>数据形式</h3>
         
@@ -256,13 +256,19 @@
   
   
   
-      <article class="past">
+      <article class="">
       
         <h3>Merkle Tree</h3>
         
 <div class="image">
-  <img src="./GopherChinaIntroduction_files/blockchain_data.jpg">
+  <img src="./GopherChinaIntroduction_files/merkle_tree_2.jpg">
 </div>
+
+  
+  <div class="code"><pre>Merkle Tree 可以为二叉树或多叉树
+叶子节点记录文件信息，非叶子节点记录其子节点的hash
+如图，hash( file1 ) = 1, 2, 3</pre></div>
+  
 
       
       <span class="pagenumber">10</span>
@@ -270,7 +276,25 @@
   
   
   
-      <article class="current">
+      <article class="">
+      
+        <h3>Merkle Tree (insert)</h3>
+        
+<div class="image">
+  <img src="./GopherChinaIntroduction_files/merkle_tree_insert_2.jpg">
+</div>
+
+  
+  <div class="code"><pre>hash( file2 ) = 1, 2, 3, 2</pre></div>
+  
+
+      
+      <span class="pagenumber">11</span>
+      </article>
+  
+  
+  
+      <article class="">
       
         <h3>共识机制</h3>
         
@@ -298,12 +322,12 @@
   
 
       
-      <span class="pagenumber">11</span>
+      <span class="pagenumber">12</span>
       </article>
   
   
   
-      <article class="next">
+      <article class="">
       
         <h3>pow（工作量证明制）</h3>
         
@@ -338,12 +362,12 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
-      <span class="pagenumber">12</span>
+      <span class="pagenumber">13</span>
       </article>
   
   
   
-      <article class="far-next">
+      <article class="">
       
         <h3>pow（工作量证明制）</h3>
         
@@ -354,7 +378,7 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   </ul>
 
   
-  <div class="code"><pre>1. 生成铸币交易，生成Merkle树，获取其根哈希
+  <div class="code"><pre>1. 生成铸币交易，更新Merkle树，获取其根哈希
 2. 组装区块头blockchain
 3. 根据工作量证明函数，不断进行nonce的哈希碰撞</pre></div>
   
@@ -378,16 +402,16 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
   <div class="code"><pre>1. 符合工作量证明函数
 2. 区块包含的所有交易都合法
-3. 最长链</pre></div>
+3. 最长链机制（防止分叉）</pre></div>
   
 
       
-      <span class="pagenumber">13</span>
+      <span class="pagenumber">14</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>dpos （股份授权证明机制）</h3>
         
@@ -414,12 +438,12 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
-      <span class="pagenumber">14</span>
+      <span class="pagenumber">15</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>dpos （股份授权证明机制）</h3>
         
@@ -448,12 +472,12 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
-      <span class="pagenumber">15</span>
+      <span class="pagenumber">16</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>智能合约</h3>
         
@@ -496,12 +520,12 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
-      <span class="pagenumber">16</span>
+      <span class="pagenumber">17</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>智能合约</h3>
         
@@ -529,80 +553,18 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
-      <span class="pagenumber">17</span>
-      </article>
-  
-  
-  
-      <article>
-      
-        <h3>IPFS (InterPlanetary File System，星际文件系统)</h3>
-        
-  <ul>
-  
-    <li>号称打造下一代互联网</li>
-  
-  </ul>
-
-  <ul>
-  
-    <li>去中心化的文件存储方案（不能算是区块链项目）</li>
-  
-  </ul>
-
-  <ul>
-  
-    <li>aims to replace HTTP and build a better web for us</li>
-  
-  </ul>
-
-      
       <span class="pagenumber">18</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
-        <h3>IPFS (InterPlanetary File System)</h3>
+        <h3>智能合约</h3>
         
-  <ul>
-  
-    <li>网络 Network -- p2p</li>
-  
-  </ul>
-
-  <ul>
-  
-    <li>快速寻址route -- Kademlia DHT</li>
-  
-  </ul>
-
-  <ul>
-  
-    <li>数据交换exchange</li>
-  
-  </ul>
-
-  
-  <div class="code"><pre>1. 交换have_list和want_list    
-2. 获取数据：产生站务；发送数据：偿还债务（避免‘自私’节点）    
-3. 节点间交换账本防止恶意节点</pre></div>
-  
-
-  <ul>
-  
-    <li>数据存储fs -- merkle tree</li>
-  
-  </ul>
-
-  
-  <div class="code"><pre>1. 每个节点都存储信息，但最大256k
-2. 根据hash可以找到文件的其他节点位置
-3. merkle tree可以防篡改
-4. 重复内容只会存1份（类似git的hash原理）
-5. 类似git，支持version地存储</pre></div>
-  
+<div class="image">
+  <img src="./GopherChinaIntroduction_files/blockchain_api.jpg">
+</div>
 
       
       <span class="pagenumber">19</span>
@@ -610,27 +572,7 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
   
   
-      <article>
-      
-        <h3>golang &amp; blockchain</h3>
-        <p class="link"><a href="https://github.com/ethereum" target="_blank">ethereum</a></p><p class="link"><a href="https://github.com/ipfs" target="_blank">ipfs</a></p><p class="link"><a href="https://github.com/hyperledger/fabric" target="_blank">fabric</a></p>
-  <ul>
-  
-    <li>开发高效 （vs c++）</li>
-  
-    <li>压榨单台机器的最高性能 （vs java/python）</li>
-  
-    <li>系统调用能力极强 （pkg/syscall）</li>
-  
-  </ul>
-
-      
-      <span class="pagenumber">20</span>
-      </article>
-  
-  
-  
-      <article>
+      <article class="">
       
         <h3>区块链目前存在的问题</h3>
         
@@ -676,21 +618,171 @@ nonce 为工作量证明，矿工挖矿大部分算力就是进行这个</pre></
   
 
       
+      <span class="pagenumber">20</span>
+      </article>
+  
+  
+  
+      <article class="">
+      
+        <h3>IPFS (InterPlanetary File System，星际文件系统)</h3>
+        
+  <ul>
+  
+    <li>号称打造下一代互联网</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li>去中心化的文件存储方案（不能算是区块链项目）</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li>aims to replace HTTP and build a better web for us</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li>p2p * git * bt * dht * merkle tree</li>
+  
+  </ul>
+
+      
       <span class="pagenumber">21</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
-        <h2>微服务</h2>
+        <h3>IPFS (InterPlanetary File System)</h3>
+        
+  <ul>
+  
+    <li>网络 Network -- p2p</li>
+  
+  </ul>
+
+  
+  <div class="code"><pre>支持目前所有的网络层传输协议</pre></div>
+  
+
+  <ul>
+  
+    <li>快速寻址route -- Kademlia DHT</li>
+  
+  </ul>
+
+  
+  <div class="code"><pre>分布式哈希寻址</pre></div>
+  
+
+  <ul>
+  
+    <li>数据交换exchange -- BitSwap</li>
+  
+  </ul>
+
+  
+  <div class="code"><pre>1. 交换have_list和want_list    
+2. 获取数据：产生站务；发送数据：偿还债务（避免‘自私’节点）    
+3. 节点间交换账本防止恶意节点</pre></div>
+  
+
+  <ul>
+  
+    <li>数据存储fs -- Merkle DAG</li>
+  
+  </ul>
+
+  
+  <div class="code"><pre>1. 每个节点都存储信息，但最大256k
+2. 根据hash可以找到文件的其他节点位置
+3. merkle tree可以防篡改
+4. 重复内容只会存1份（类似git的hash原理）
+5. 类似git，支持version地存储</pre></div>
+  
+
       
       <span class="pagenumber">22</span>
       </article>
   
   
   
-      <article>
+      <article class="">
+      
+        <h3>Kademlia DHT</h3>
+        
+<div class="image">
+  <img src="./GopherChinaIntroduction_files/Kademlia_DHT.png">
+</div>
+
+  
+  <div class="code"><pre>XOR(异或运算)，寻找距离最近的节点 
+如：hash 110
+
+若本地无法确认最终地址，通过与目标最近的节点继续进行路由寻址</pre></div>
+  
+
+      
+      <span class="pagenumber">23</span>
+      </article>
+  
+  
+  
+      <article class="">
+      
+        <h3>Merkle DAG</h3>
+        
+<div class="image">
+  <img src="./GopherChinaIntroduction_files/Merkle_DAG.png">
+</div>
+
+  
+  <div class="code"><pre>每个节点都存储信息，但最大256k
+支持version地存储(类似git)</pre></div>
+  
+
+      
+      <span class="pagenumber">24</span>
+      </article>
+  
+  
+  
+      <article class="">
+      
+        <h3>golang &amp; blockchain</h3>
+        <p class="link"><a href="https://github.com/ethereum" target="_blank">ethereum</a></p><p class="link"><a href="https://github.com/ipfs" target="_blank">ipfs</a></p><p class="link"><a href="https://github.com/hyperledger/fabric" target="_blank">fabric</a></p>
+  <ul>
+  
+    <li>开发高效 （vs c++）</li>
+  
+    <li>压榨单台机器的最高性能 （vs java/python）</li>
+  
+    <li>系统调用能力极强 （pkg/syscall）</li>
+  
+  </ul>
+
+      
+      <span class="pagenumber">25</span>
+      </article>
+  
+  
+  
+      <article class="">
+      
+        <h2>微服务</h2>
+      
+      <span class="pagenumber">26</span>
+      </article>
+  
+  
+  
+      <article class="">
       
         <h3>异常定位 -&gt; 日志规范化（opentracing）</h3>
         
@@ -710,12 +802,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
   
 
       
-      <span class="pagenumber">23</span>
+      <span class="pagenumber">27</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>线上全链路压测</h3>
         
@@ -724,12 +816,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
 </div>
 
       
-      <span class="pagenumber">24</span>
+      <span class="pagenumber">28</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>线上全链路压测</h3>
         
@@ -768,12 +860,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
   
 
       
-      <span class="pagenumber">25</span>
+      <span class="pagenumber">29</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>服务迁移</h3>
         
@@ -788,12 +880,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
 </div>
 
       
-      <span class="pagenumber">26</span>
+      <span class="pagenumber">30</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>服务迁移</h3>
         
@@ -808,12 +900,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
 </div>
 
       
-      <span class="pagenumber">27</span>
+      <span class="pagenumber">31</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>服务迁移</h3>
         
@@ -828,12 +920,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
 </div>
 
       
-      <span class="pagenumber">28</span>
+      <span class="pagenumber">32</span>
       </article>
   
   
   
-      <article>
+      <article class="">
       
         <h3>服务迁移</h3>
         
@@ -848,12 +940,12 @@ TraceId/SpanId -&gt; 跨进程requestid</pre></div>
 </div>
 
       
-      <span class="pagenumber">29</span>
+      <span class="pagenumber">33</span>
       </article>
   
   
 
-      <article>
+      <article class="">
         <h3>Thank you</h3>
         
           <div class="presenter">
